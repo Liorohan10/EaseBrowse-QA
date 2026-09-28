@@ -20,7 +20,13 @@ Write tests in natural language for web and mobile. EaseBrowse QA learns from pa
 Install the package:
 
 ```sh
-npm install -D easebrowse-qa
+npm install -D agent-qa
+```
+
+For Codex or Claude Code subscription auth, also install:
+
+```sh
+npm install -D @vostride/agent-qa-subscription-auth
 ```
 
 Install Docker before using hooks. EaseBrowse QA runs hooks in a sandboxed runtime, and Docker is required for the Node, Bun, Python, and Bash hook containers.
@@ -28,16 +34,16 @@ Install Docker before using hooks. EaseBrowse QA runs hooks in a sandboxed runti
 Initialize EaseBrowse QA and install the runtime support you need:
 
 ```sh
-npx easebrowse-qa init
-npx easebrowse-qa install-browsers --chromium
+npx agent-qa init
+npx agent-qa install-browsers --chromium
 # Mobile projects:
-npx easebrowse-qa install-mobile-drivers --all
+npx agent-qa install-mobile-drivers --all
 ```
 
 Start the dashboard, complete auth, and run tests from the UI:
 
 ```sh
-npx easebrowse-qa dashboard --open
+npx agent-qa dashboard --open
 ```
 
 ## CLI
@@ -45,7 +51,7 @@ npx easebrowse-qa dashboard --open
 Run tests from the CLI:
 
 ```sh
-npx easebrowse-qa run tests/hacker-news-top-story.yaml
+npx agent-qa run tests/hacker-news-top-story.yaml
 ```
 
 ## Documentation & References
