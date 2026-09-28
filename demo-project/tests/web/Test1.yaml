@@ -1,0 +1,8 @@
+test-id: t_fee-java-around-bog-bas-accept-cod-mental-strong-deny
+name: W3C CityLights Accessibility Smoke Test
+target: wai-bad
+steps:
+  - 'Verify the page contains text "CityLights"'
+  - 'Verify the navigation menu contains "News"'
+  - 'Click on "News"'
+  - 'Verify the page displays "News" content'

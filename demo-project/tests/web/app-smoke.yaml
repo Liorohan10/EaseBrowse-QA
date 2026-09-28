@@ -1,0 +1,7 @@
+test-id: t_busy-march-uria-corp-abu-last-actor-rap-rat-caster
+name: agent-qa Workspace Task Creation Flow
+target: app
+steps:
+  - 'Verify the page displays heading "agent-qa Verification Workspace"'
+  - 'Click the "Add Task" button'
+  - 'Verify the page displays Total Tasks: 2'
